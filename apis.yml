@@ -1,7 +1,25 @@
 aid: flourish
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/flourish.png
 name: Flourish
-description: 'Flourish is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Flourish (Flourish Labs) is a New York City based artificial intelligence
+  research company building, in its own words, "human-level intelligence with human-level
+  efficiency." Backed by GV (Google Ventures), the lab concentrates on advanced machine
+  learning systems and foundational AI research rather than a public developer platform.
+  At the time of profiling it publishes a marketing website but exposes no public API,
+  SDK, developer portal, documentation, MCP server, or other developer surface. This
+  profile was added to the API Evangelist network as a GV portfolio-lead stub and
+  enriched with a live domain-security probe of its website host.'
 url: https://raw.githubusercontent.com/api-evangelist/flourish/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Ai
+- Artificial Intelligence
+- Machine Learning
+- Research
+- AI Research Lab
+- New York
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/flourish-domain-security.yml
 - type: Website
-  url: http://www.flourishlabs.ai
+  url: https://flourishlabs.ai
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
